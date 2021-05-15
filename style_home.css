@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Banners for all pages */
+/*https://cdni0.trtworld.com/w480/h270/q75/8767-trtworld-399984-439138.jpg*/
+
+/* Home Banner */
+/*https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0OTE4MzZ8fGVufDB8fHx8&w=1000&q=80*/
+#banner0 {
+    background-image: url(resources/images/home_banner.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 400px;
+    width: 100%;
+    color: white;
+}
+
+#banner0 .content h1 {
+    border: 3px solid white;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+/* What can we do Banner */
+#banner4 {
+    background-image: url(./resources/images/Stop_child_marriage.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 400px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#banner4 .content h1 {
+    border: 3px solid white;
+    color: #FFFFFF;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/*Styles for Navigation bar */
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: #ADD8E6;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ADD8E6;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: #ADD8E6;
+}
+
+
+/* Styles for Body content */
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+/* Main column */
+.main {
+    background-color: white;
+    flex: 70%;
+    margin-top: -80px;
+    -ms-flex: 70%;
+    /* IE10 */
+    padding: 7rem;
+}
+
+.main he {
+    margin-top: -50px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.intro {
+    color: black;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.h4intro {
+    color: black;
+    text-align: center;
+    margin-top: -100px;
+}
+.h4body2{
+  padding-bottom: 7%;
+  text-align: center;
+}
+
+.h1body {
+    color: black;
+      margin-top: 80px;
+    text-align: center;
+}
+
+p {
+color: black;
+text-align: justify;
+font-size: 15pt;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+
+.image2 {
+    width: 100%;
+    object-fit: scale-down;
+    height: auto;
+    display: flex;
+
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #0072ce;
+    width: 100%;
+}
+
+.main img {
+    width: 100%;
+    object-fit: scale-down;
+    max-height: 100%;
+}
+
+.video {
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+    width: 550px;
+    align-content: center;
+}
+
+/*
+.video {
+  width: 650px;
+  height: 500px;
+  align: center;
+  margin: 0px 425px;
+}
+*/
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    position: static;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .fakeimg {
+        display: none;
+    }
+}
