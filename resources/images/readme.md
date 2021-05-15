@@ -1,1 +1,1 @@
-All images are stored here
+This folder contains images
